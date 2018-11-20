@@ -6,22 +6,20 @@
     <meta name="theme-color" content="#000000">
   
     <link rel="shortcut icon" href="img/ico/cs.ico">
+  
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"/>
-      <link rel="stylesheet" href="custom.css">
-      <link rel="stylesheet" href="jsonview.css">
-
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/materialize-social@1.0.3/materialize-social.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
     <title>CONSTRUE</title>
+    <!-- Compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
-    <script src="jsonview.js"></script>
-
+    
+    <link rel="stylesheet" href="custom.css">
+    
   </head>
   <body>
             
@@ -46,9 +44,19 @@
         <main>
             
               <div class="container" id="categorias-area">
-                <blockquote>
-                    Listagem de categorias CONSTRUE
-                </blockquote>
+                <div class="row">
+                    <div class="col s6">
+                      <blockquote>
+                          Listagem de categorias CONSTRUE
+                      </blockquote>
+                    </div>
+                    <div class="col s3">
+                        <div id="total-div"><span id="total-geral"></span></div>
+                    </div>
+                    <div class="col s3">
+                        <div id="total-skus-div"><span id="total-geral-skus"></span></div>
+                    </div>
+                </div>    
 
                 <ul class="collapsible" id="lista-categorias"></ul>
 
@@ -73,12 +81,9 @@
 
 
     
-  <script
-    src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  
+  
+  
   <script src="custom.js"></script>
   
  
